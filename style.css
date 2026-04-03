@@ -2,6 +2,15 @@
     width: 33%;
 }
 
+.tasks #taskList {
+    display: flex;
+    flex-direction: column;
+}
+
 .lined-through {
     text-decoration: line-through;
+}
+
+#buttons {
+    display: flex;
 }
