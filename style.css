@@ -1,16 +1,47 @@
-.tasks {
-    width: 33%;
-}
+/* =========================
+   ESTILOS DE ESTADO
+========================= */
 
-.tasks #taskList {
-    display: flex;
-    flex-direction: column;
-}
-
+/* Aplica tachado a tareas completadas */
 .lined-through {
     text-decoration: line-through;
 }
 
+
+/* =========================
+   LAYOUT
+========================= */
+
+/* Contenedor de botones de filtro (los pone en fila) */
 #buttons {
     display: flex;
+}
+
+/* Contenedor interno de cada tarea (usa flex para alinear texto + botón) */
+.display {
+    display: flex;
+    gap: 10px; /* espacio entre texto y botón */
+}
+
+
+/* =========================
+   AJUSTES DE CONTENIDO
+========================= */
+
+/* Ajusta el ancho al contenido (puede ser innecesario en algunos casos) */
+.adjustMargin {
+    width: fit-content;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+/* Estilo del botón eliminar */
+.button {
+    color: white;
+    background-color: black;
+    margin: 0px;        /* elimina márgenes por defecto */
+    padding: 0px 5px;   /* espacio interno horizontal */
 }
